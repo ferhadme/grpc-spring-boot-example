@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package com.ferhad.grpc;
+
+option java_multiple_files = true;
+option java_package = "com.ferhad.grpc";
+
+service GreetingService {
+  rpc greeting(GreetingRequest) returns (GreetingResponse);
+}
+
+message GreetingRequest {
+  string firstName = 1;
+  string lastName = 2;
+}
+
+message GreetingResponse {
+  string message = 1;
+}
+

@@ -1,0 +1,7 @@
+grpc:
+  client:
+    greeting-service:
+      address: 'localhost:9090'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
